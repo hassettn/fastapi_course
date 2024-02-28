@@ -42,6 +42,7 @@ async def read_item(number: int):
     # data parsing and validation as integer
     return {"item_id": number}
 
+
 @my_app.post("/request/")
 async def create_item(request: my_Item):
     return request
